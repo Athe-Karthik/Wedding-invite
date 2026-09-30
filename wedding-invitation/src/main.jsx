@@ -20,11 +20,8 @@ function App() {
     <main className="opening-screen">
       <img
         className="opening-art"
-        src="/opening-generated.jpg"
+        src="/opening-reference.jpg"
         alt="Vijay and Rashmika wedding invitation"
-        onError={(event) => {
-          event.currentTarget.src = "/opening-reference.jpg";
-        }}
       />
 
       <button
