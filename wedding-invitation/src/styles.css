@@ -44,33 +44,22 @@ body { overflow-x: hidden; }
   left: 50%;
   top: 44.8%;
   transform: translateX(-50%);
-  width: min(54vw, 270px);
-  height: clamp(48px, 6.8vw, 64px);
+  width: min(55vw, 270px);
+  height: clamp(48px, 7vw, 64px);
   border: 0;
   border-radius: 999px;
-  background: #8d1238;
-  color: #fff7e5;
-  box-shadow:
-    0 7px 16px rgba(73, 17, 23, .25),
-    inset 0 0 0 2px #d6a849,
-    inset 0 0 0 4px rgba(141, 18, 56, .95);
+  background: transparent;
+  color: transparent;
+  box-shadow: none;
   cursor: pointer;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(11px, 2.8vw, 15px);
-  font-weight: 700;
-  letter-spacing: .16em;
-}
-
-.open-invitation span {
-  position: relative;
-  top: 1px;
+  opacity: 0;
 }
 
 .open-invitation:active { transform: translateX(-50%) scale(.98); }
 
 .open-invitation:focus-visible {
-  outline: 3px solid rgba(141, 18, 56, .35);
-  outline-offset: 5px;
+  outline: 2px solid rgba(141, 18, 56, .35);
+  outline-offset: 4px;
 }
 
 .after-open {
@@ -108,6 +97,6 @@ body { overflow-x: hidden; }
   .open-invitation {
     width: 55vw;
     height: 13vw;
-    top: 44.8%;
+    top: 46%;
   }
 }
