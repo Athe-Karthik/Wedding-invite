@@ -7,7 +7,7 @@ function App() {
     <main className="opening-reference-page">
       <img
         className="opening-reference"
-        src="/opening-reference.jpg"
+        src="/opening-reference.svg"
         alt="Wedding invitation opening screen"
       />
       <button
