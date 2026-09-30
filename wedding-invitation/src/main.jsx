@@ -20,7 +20,7 @@ function App() {
     <main className="opening-screen">
       <img
         className="opening-art"
-        src="/opening-reference.jpg"
+        src="/opening-generated.jpg"
         alt="Vijay and Rashmika wedding invitation"
       />
 
