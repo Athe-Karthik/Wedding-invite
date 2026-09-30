@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1648">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f3df9d"/><stop offset=".52" stop-color="#fff1c7"/><stop offset="1" stop-color="#e8c982"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#fff9dc"/><stop offset="1" stop-color="#f0d994"/></radialGradient>
+ <linearGradient id="red" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a91d3b"/><stop offset="1" stop-color="#741329"/></linearGradient>
+ <linearGradient id="green"><stop stop-color="#274e2b"/><stop offset=".5" stop-color="#6e963f"/><stop offset="1" stop-color="#244d2b"/></linearGradient>
+ <pattern id="grain" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="4" cy="7" r="1" fill="#9a7134" opacity=".12"/><circle cx="16" cy="15" r=".8" fill="#9a7134" opacity=".1"/></pattern>
+</defs>
+<rect width="900" height="1648" fill="url(#bg)"/><rect width="900" height="1648" fill="url(#grain)"/>
+<circle cx="450" cy="520" r="330" fill="url(#glow)" opacity=".65"/>
+<!-- hanging torans -->
+<g fill="#d59a27" stroke="#9a7923" stroke-width="3"><path d="M45 0v175M85 0v145M125 0v115M775 0v120M815 0v150M855 0v180"/></g>
+<g fill="#d59a27"><circle cx="45" cy="175" r="15"/><circle cx="85" cy="145" r="15"/><circle cx="125" cy="115" r="15"/><circle cx="775" cy="120" r="15"/><circle cx="815" cy="150" r="15"/><circle cx="855" cy="180" r="15"/></g>
+<!-- mandala -->
+<g transform="translate(450 515)" fill="none" stroke="#c69b43" opacity=".38">
+ <circle r="280" stroke-width="3"/><circle r="245" stroke-width="2"/><circle r="205" stroke-width="2"/>
+ <path d="M0-290L68-250 125-205 180-145 225-70 245 0 225 70 180 145 125 205 68 250 0 290-68 250-125 205-180 145-225 70-245 0-225-70-180-145-125-205-68-250Z" stroke-width="3"/>
+ <path d="M0-210L105-105 210 0 105 105 0 210-105 105-210 0-105-105Z" stroke-width="3"/>
+ <circle r="62" stroke-width="4"/>
+</g>
+<g text-anchor="middle" fill="#8d2034">
+ <text x="450" y="250" font-family="Georgia,serif" font-size="30" letter-spacing="7" fill="#936d3e">THE WEDDING OF</text>
+ <text x="450" y="385" font-family="cursive" font-size="112">Vijay</text>
+ <text x="450" y="455" font-family="Georgia,serif" font-size="34">&amp;</text>
+ <text x="450" y="560" font-family="cursive" font-size="112">Rashmika</text>
+</g>
+<g text-anchor="middle" fill="#84633c" font-family="Georgia,serif">
+ <text x="450" y="690" font-size="24" letter-spacing="5">26 OCTOBER 2026</text>
+ <text x="450" y="730" font-size="19" letter-spacing="3">ITC MEMENTOS, UDAIPUR</text>
+ <text x="450" y="758" font-size="17" letter-spacing="2">RAJASTHAN, INDIA</text>
+</g>
+<g transform="translate(450 830)">
+ <rect x="-150" y="0" width="300" height="68" rx="34" fill="url(#red)" stroke="#651225" stroke-width="6"/>
+ <text x="0" y="43" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" letter-spacing="5" fill="#fff1d6">OPEN INVITATION</text>
+</g>
+<!-- lower decorative temple -->
+<g transform="translate(450 1140)" fill="#a36e27" stroke="#80551f" stroke-width="4">
+ <path d="M-430 430V170L-330 110V430Z"/><path d="M430 430V170L330 110V430Z"/>
+ <path d="M-360 145L-300 0L-240 145Z"/><path d="M360 145L300 0L240 145Z"/>
+ <path d="M-250 430V190L0 75L250 190V430Z"/>
+ <path d="M-155 430V240L0 145L155 240V430Z" fill="#d7ad50"/>
+ <path d="M-45 430V300Q0 250 45 300V430Z" fill="#7e4322"/>
+</g>
+<!-- leaves -->
+<g fill="url(#green)" stroke="#30572d" stroke-width="5">
+ <path d="M0 1648C15 1470 70 1340 205 1240C180 1400 125 1535 30 1648Z"/>
+ <path d="M900 1648C885 1470 830 1340 695 1240C720 1400 775 1535 870 1648Z"/>
+ <path d="M0 1600C45 1450 130 1370 270 1330C210 1470 120 1570 0 1600Z"/>
+ <path d="M900 1600C855 1450 770 1370 630 1330C690 1470 780 1570 900 1600Z"/>
+</g>
+<g fill="#d99c25"><ellipse cx="105" cy="1510" rx="28" ry="65" transform="rotate(-25 105 1510)"/><ellipse cx="795" cy="1510" rx="28" ry="65" transform="rotate(25 795 1510)"/></g>
+</svg>
