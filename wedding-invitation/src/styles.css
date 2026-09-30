@@ -1,1 +1,141 @@
-html,body,#root{margin:0;min-width:320px;min-height:100%;background:#000}body{overflow-x:hidden}.opening-reference-page{min-height:100svh;display:flex;justify-content:center;background:#000}.opening-reference{display:block;width:min(100vw,458px);height:auto;min-height:100svh;object-fit:cover;object-position:top center}.reference-open{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:min(46vw,212px);height:58px;opacity:0;border:0;background:transparent;cursor:pointer}@media(max-width:500px){.opening-reference{width:100vw;min-height:0}.reference-open{width:47vw;height:13vw;top:49.5%}}
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  width: 100%;
+  background: #000;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  font: inherit;
+}
+
+.invitation-app {
+  min-height: 100svh;
+  width: 100%;
+  background: #000;
+}
+
+.opening-screen {
+  position: relative;
+  min-height: 100svh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  background: #f7e9b9;
+}
+
+.opening-art {
+  display: block;
+  width: min(100vw, 469px);
+  height: auto;
+  max-width: 469px;
+  object-fit: contain;
+  object-position: top center;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.open-invitation {
+  position: absolute;
+  left: 50%;
+  top: 46.8%;
+  transform: translate(-50%, -50%);
+  width: min(52vw, 245px);
+  height: clamp(48px, 6.8vw, 64px);
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.open-invitation:focus-visible {
+  outline: 3px solid rgba(121, 14, 42, 0.55);
+  outline-offset: 5px;
+}
+
+.opening-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: rgba(84, 28, 25, 0.72);
+  color: #fff8e8;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.after-open {
+  min-height: 100svh;
+  padding: 28px 20px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 20px;
+  background: #fbf4df;
+  color: #5f1b22;
+  text-align: center;
+}
+
+.back-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 22px;
+  background: #7f1536;
+  color: #fff8e8;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .opening-screen {
+    min-height: 100vh;
+  }
+
+  .opening-art {
+    width: 469px;
+  }
+}
+
+@media (max-width: 520px) {
+  .opening-art {
+    width: 100vw;
+    max-width: none;
+  }
+
+  .open-invitation {
+    width: 52vw;
+    height: 13vw;
+    top: 46.8%;
+  }
+}
+
+@media (max-width: 360px) {
+  .open-invitation {
+    width: 54vw;
+    height: 14vw;
+  }
+}
