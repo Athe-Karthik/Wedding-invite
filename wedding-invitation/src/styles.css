@@ -20,7 +20,18 @@ a { color: inherit; }
 
 .opening-screen { position: relative; min-height: 100svh; width: 100%; display: flex; justify-content: center; align-items: flex-start; overflow: hidden; background: #f5e7b6; }
 .opening-art { display: block; width: min(100vw, 480px); height: auto; max-width: 480px; object-fit: contain; object-position: top center; user-select: none; -webkit-user-drag: none; }
-.open-invitation { position: absolute; z-index: 5; left: 50%; top: 44.8%; transform: translateX(-50%); width: min(55vw, 270px); height: clamp(48px, 7vw, 64px); border: 0; border-radius: 999px; background: transparent; color: transparent; cursor: pointer; opacity: 0; }
+.open-invitation {
+  position: absolute;
+  z-index: 10;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0;
+}
 .open-invitation:active { transform: translateX(-50%) scale(.98); }
 .open-invitation:focus-visible { outline: 2px solid rgba(141,18,56,.5); outline-offset: 4px; }
 
