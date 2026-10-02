@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { ArrowDown, ArrowUpRight, CalendarDays, Clock3, Heart, MapPin, Music2, Share2, Sparkles } from "lucide-react";
 import "./styles.css";
@@ -23,9 +23,6 @@ function App() {
   const [opened, setOpened] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [seconds, setSeconds] = useState(0);
-  useEffect(() => { const id = window.setInterval(() => setSeconds(s => s + 1), 1000); return () => window.clearInterval(id); }, []);
-  const elapsed = useMemo(() => ({ days: Math.floor(seconds / 86400), hours: Math.floor(seconds / 3600) % 24, mins: Math.floor(seconds / 60) % 60 }), [seconds]);
   const share = async () => {
     const text = "You're invited to celebrate the wedding of Akash & Drashti. More details coming soon!";
     try { if (navigator.share) await navigator.share({ title: "Akash & Drashti", text, url: location.href }); else { await navigator.clipboard.writeText(location.href); setCopied(true); window.setTimeout(() => setCopied(false), 2200); } } catch {}
@@ -96,7 +93,7 @@ function App() {
       </section>
 
       <section className="countdown-section">
-        <div className="countdown-decor">✿</div><p className="section-kicker">UNTIL WE SAY “I DO”</p><h2>The countdown <em>begins</em></h2><FloralRule/><p className="countdown-note">The date is being finalised. We can't wait to share it with you.</p><div className="counter"><div><b>{String(elapsed.days).padStart(2,"0")}</b><span>DAYS</span></div><i>:</i><div><b>{String(elapsed.hours).padStart(2,"0")}</b><span>HOURS</span></div><i>:</i><div><b>{String(elapsed.mins).padStart(2,"0")}</b><span>MINUTES</span></div></div><p className="countdown-foot">A LITTLE MORE TIME, A LIFETIME OF LOVE</p>
+        <div className="countdown-decor">✿</div><p className="section-kicker">UNTIL WE SAY “I DO”</p><h2>The countdown <em>begins</em></h2><FloralRule/><p className="countdown-note">The date is being finalised. We can't wait to share it with you.</p><div className="counter"><div><b>--</b><span>DAYS</span></div><i>:</i><div><b>--</b><span>HOURS</span></div><i>:</i><div><b>--</b><span>MINUTES</span></div></div><p className="countdown-foot">A LITTLE MORE TIME, A LIFETIME OF LOVE</p>
       </section>
 
       <section className="details-section section-pad" id="details">
