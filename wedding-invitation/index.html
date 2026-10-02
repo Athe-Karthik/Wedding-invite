@@ -51,6 +51,20 @@ footer{padding:72px 20px 35px;text-align:center;background:var(--wine2);color:#f
 @media(max-width:380px){.loader-copy{padding-top:175px}.loader-copy h1{font-size:55px}.hero-copy h2{font-size:59px}.hero-copy .line{font-size:17px}.invite{width:82vw}.invite h2{font-size:45px}.portrait{width:37vw}.countdown div{min-width:47px}.countdown strong{font-size:29px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.hero .art,.palace .art,.mandap-art,.elephant{transform:none!important}}
 svg{display:block;width:100%;height:auto}
+
+<style id="rsvp-style">
+.rsvp{min-height:78svh;padding:74px 18px;display:grid;place-items:center;background:linear-gradient(#fbf7ee,#f0e2c8)}
+.rsvp-card{width:min(90vw,620px);padding:62px 34px;text-align:center;background:#fffaf1;border:1px solid var(--gold);outline:1px solid #b78a4845;outline-offset:8px;box-shadow:0 24px 70px #59412812}
+.rsvp-card h2{margin:0;color:var(--wine);font:clamp(44px,7vw,67px)/.85 var(--display)}
+.rsvp-card h2 em{font:italic .92em var(--serif);font-weight:400}
+.rsvp-copy{max-width:480px;margin:0 auto 24px;color:#735845;font:19px/1.52 var(--serif)}
+.rsvp-form{width:min(100%,420px);margin:auto;display:grid;gap:10px}
+.rsvp-form input,.rsvp-form select{width:100%;padding:13px 15px;border:1px solid #b78a4880;background:#fffcf5;color:var(--ink);font:16px var(--serif);outline:none}
+.rsvp-form input:focus,.rsvp-form select:focus{border-color:var(--gold)}
+.rsvp-form .share{width:100%;justify-content:center}
+.rsvp-error{min-height:18px;margin:0;color:var(--wine);font:13px var(--serif)}
+@media(max-width:520px){.rsvp{min-height:84svh}.rsvp-card{padding:50px 22px}.rsvp-copy{font-size:18px}}
+</style>
 </style>
 </head>
 <body>
@@ -149,6 +163,25 @@ svg{display:block;width:100%;height:auto}
   <div class="elephant"><svg viewBox="0 0 820 520" aria-hidden="true"><defs><linearGradient id="eb" x1="0" x2="1"><stop stop-color="#666560"/><stop offset=".5" stop-color="#8d8982"/><stop offset="1" stop-color="#66635f"/></linearGradient><linearGradient id="ec" x1="0" x2="1"><stop stop-color="#6f1d31"/><stop offset=".5" stop-color="#b04a4d"/><stop offset="1" stop-color="#6f1d31"/></linearGradient></defs><ellipse cx="375" cy="430" rx="260" ry="34" fill="#315b4f" opacity=".35"/><g transform="translate(160 76)"><ellipse cx="265" cy="205" rx="205" ry="139" fill="url(#eb)"/><circle cx="442" cy="163" r="87" fill="#77736e"/><ellipse cx="492" cy="190" rx="54" ry="77" fill="#87827d"/><path d="M510 214Q584 262 540 335Q527 350 514 336Q544 288 503 250Q482 229 510 214Z" fill="#6f6c67"/><circle cx="474" cy="149" r="5" fill="#29211d"/><path d="M311 94Q369 28 442 91" fill="none" stroke="#c4a15a" stroke-width="18" stroke-linecap="round"/><path d="M350 87Q413 111 480 91" fill="none" stroke="#e3c27f" stroke-width="10"/><path d="M74 165Q150 96 260 116L372 136V273H74Z" fill="url(#ec)"/><path d="M74 165Q151 111 260 126L372 143V165H74Z" fill="#e7bb65"/><path d="M82 255H364" stroke="#f1bf63" stroke-width="12"/><g fill="#e9bc65"><circle cx="103" cy="205" r="10"/><circle cx="140" cy="205" r="10"/><circle cx="177" cy="205" r="10"/><circle cx="214" cy="205" r="10"/><circle cx="251" cy="205" r="10"/><circle cx="288" cy="205" r="10"/><circle cx="325" cy="205" r="10"/><circle cx="362" cy="205" r="10"/></g><g fill="#e2a064"><circle cx="70" cy="300" r="12"/><circle cx="109" cy="308" r="12"/><circle cx="148" cy="309" r="12"/><circle cx="187" cy="301" r="12"/><circle cx="226" cy="291" r="12"/><circle cx="265" cy="290" r="12"/><circle cx="304" cy="298" r="12"/><circle cx="343" cy="309" r="12"/><circle cx="382" cy="310" r="12"/><circle cx="421" cy="302" r="12"/><circle cx="460" cy="292" r="12"/></g><g fill="#6b6863"><rect x="170" y="292" width="52" height="110" rx="18"/><rect x="278" y="292" width="52" height="110" rx="18"/><rect x="380" y="294" width="52" height="105" rx="18"/><rect x="467" y="292" width="50" height="104" rx="18"/></g><path d="M470 95Q505 35 542 51" stroke="#d9b15c" stroke-width="8" fill="none" stroke-linecap="round"/></g></svg></div>
   <div class="final-copy reveal"><p class="kicker">UNTIL WE SAY “I DO”</p><h2>The countdown<br><em>begins.</em></h2><div class="rule"><i></i><span>❦</span><b>✦</b><span>❦</span><i></i></div><div class="countdown"><div><strong>—</strong><span>days</span></div><div><strong>—</strong><span>hours</span></div><div><strong>—</strong><span>minutes</span></div><div><strong>—</strong><span>seconds</span></div></div><p class="final-note">The date is being finalised. We cannot wait to share it with you.</p><div class="details"><div>⌖ <span>Venue details to follow<br>Address to be added</span></div><span>RSVP date to be announced</span></div><button class="share" id="shareBtn2">↗ SHARE THIS INVITATION</button></div><div class="num light">10 / 10</div>
 </section>
+
+<section class="rsvp">
+  <div class="rsvp-card">
+    <p class="kicker">ONE LAST LITTLE THING</p>
+    <h2>Will you join<br><em>our celebration?</em></h2>
+    <div class="rule"><i></i><span>❦</span><b>✦</b><span>❦</span><i></i></div>
+    <p class="rsvp-copy">Your presence is the most beautiful gift. RSVP details can be connected here once the family WhatsApp number is added.</p>
+    <div class="rsvp-form">
+      <input id="rsvpName" type="text" placeholder="Your name" aria-label="Your name" autocomplete="name">
+      <select id="rsvpStatus" aria-label="Attendance">
+        <option value="yes">Joyfully attending</option>
+        <option value="no">Sending blessings</option>
+      </select>
+      <input id="rsvpGuests" type="number" min="1" max="20" value="1" placeholder="Guests" aria-label="Number of guests">
+      <button id="rsvpBtn" class="share" type="button">RSVP ON WHATSAPP ↗</button>
+      <p id="rsvpError" class="rsvp-error" role="alert"></p>
+    </div>
+  </div>
+</section>
 </main>
 
 <footer><div class="foot-orn">✦ ❦ ✦</div><div class="tel">మీ రాక మాకు ఆనందం</div><h2>Akash<em>&</em>Drashti</h2><p>Your presence is our joy</p><a class="back" href="#home">↑ BACK TO TOP</a></footer>
@@ -173,6 +206,19 @@ document.querySelectorAll(".shot").forEach(btn=>btn.addEventListener("click",()=
 $("#closeLight").addEventListener("click",()=>lb.classList.remove("show"));lb.addEventListener("click",e=>{if(e.target===lb)lb.classList.remove("show")});addEventListener("keydown",e=>{if(e.key==="Escape")lb.classList.remove("show")});
 if(CONFIG.couple.dateISO){const target=new Date(CONFIG.couple.dateISO).getTime();const tick=()=>{const ms=Math.max(0,target-Date.now()),vals=[Math.floor(ms/864e5),Math.floor(ms/36e5)%24,Math.floor(ms/6e4)%60,Math.floor(ms/1e3)%60];document.querySelectorAll(".countdown strong").forEach((el,i)=>el.textContent=String(vals[i]).padStart(2,"0"));};tick();setInterval(tick,1000);}
 document.addEventListener("click",e=>{const a=e.target.closest('a[href^="#"]');if(!a)return;const el=document.querySelector(a.getAttribute("href"));if(el){e.preventDefault();el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});}});
+
+const rsvpBtn=document.querySelector("#rsvpBtn");
+rsvpBtn.addEventListener("click",()=>{
+  const name=document.querySelector("#rsvpName").value.trim();
+  const status=document.querySelector("#rsvpStatus").value;
+  const guests=document.querySelector("#rsvpGuests").value;
+  const error=document.querySelector("#rsvpError");
+  if(!name){error.textContent="Please enter your name.";document.querySelector("#rsvpName").focus();return;}
+  if(!CONFIG.whatsapp){error.textContent="The family WhatsApp number still needs to be added in CONFIG.";return;}
+  error.textContent="";
+  const msg="RSVP for "+CONFIG.couple.groom+" & "+CONFIG.couple.bride+"%0AName: "+encodeURIComponent(name)+"%0A"+(status==="yes"?"Attending: Yes%0AGuests: "+encodeURIComponent(guests):"Attending: No, sending blessings");
+  window.open("https://wa.me/"+CONFIG.whatsapp+"?text="+msg,"_blank","noopener,noreferrer");
+});
 </script>
 </body>
 </html>
