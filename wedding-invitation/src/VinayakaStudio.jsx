@@ -12,8 +12,6 @@ export default function VinayakaStudio() {
   const [duration, setDuration] = useState(60);
   const [playing, setPlaying] = useState(true);
 
-  useEffect(() => () => Object.values(images).forEach(url => url && URL.revokeObjectURL(url)), [images]);
-
   const loadImage = (key, file) => {
     if (!file) return;
     setImages(old => {
