@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { ArrowDown, ArrowUpRight, CalendarDays, Clock3, Heart, MapPin, Music2, Share2, Sparkles } from "lucide-react";
 import "./styles.css";
+import VinayakaStudio from "./VinayakaStudio.jsx";
 
 const couple = { bride: "Drashti", groom: "Akash", date: "Wedding date to be announced", venue: "Venue details to follow" };
 const events = [
@@ -106,4 +107,5 @@ function App() {
     </main>
   );
 }
-createRoot(document.getElementById("root")).render(<App />);
+const showVinayakaStudio = new URLSearchParams(window.location.search).get("studio") === "vinayaka";
+createRoot(document.getElementById("root")).render(showVinayakaStudio ? <VinayakaStudio /> : <App />);
